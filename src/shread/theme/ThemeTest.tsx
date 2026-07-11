@@ -1,10 +1,11 @@
-import { View,Text } from "react-native";
+import { View,Text,ScrollView } from "react-native";
 import AppButton from "../components";
 import theme from ".";
+import AppCard from "../components/card";
 
 export function ThemeTest() {
   return (
-    <>
+    <ScrollView style={{width:"100%"}}>
       <AppButton>Merhaba dünya</AppButton>
       <AppButton variant="outline">Merhaba dünya</AppButton>
       <AppButton variant="secondary">Merhaba dünya</AppButton>
@@ -138,6 +139,16 @@ export function ThemeTest() {
       >
         <Text>theme.color.text.secondary</Text>
       </View>
-    </>
+
+      <AppCard>
+        <Text>merhaba dünya</Text>
+      </AppCard>
+      <AppCard variant="outline">
+        <Text>merhaba dünya</Text>
+      </AppCard>
+      <AppCard variant="secondary">
+        <Text>merhaba dünya</Text>
+      </AppCard>
+    </ScrollView>
   );
 }

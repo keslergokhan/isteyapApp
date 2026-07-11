@@ -1,12 +1,18 @@
 import { StyleSheet, ViewStyle } from "react-native"
 import { AppVariantStyles } from "../base";
+import theme from "@/shread/theme";
+
+const BaseContainer : ViewStyle = {
+    padding: theme.spacing.md,
+    display:"flex"
+}
 
 export const CarStyles = StyleSheet.create<AppVariantStyles<ViewStyle>>(
     {
         primary: {
+            ...BaseContainer,
             backgroundColor: "white",
             borderRadius: 8,
-            padding: 16,
             shadowColor: "#000",
             shadowOffset: {
                 width: 0,
@@ -17,16 +23,16 @@ export const CarStyles = StyleSheet.create<AppVariantStyles<ViewStyle>>(
             elevation: 5,
         },
         secondary: {
+            ...BaseContainer,
             backgroundColor: "white",
             borderRadius: 8,
-            padding: 16,
             borderWidth: 1,
             borderColor: "#ccc",
         },
         outline: {
+            ...BaseContainer,
             backgroundColor: "transparent",
             borderRadius: 8,
-            padding: 16,
             borderWidth: 1,
             borderColor: "#ccc",
         }
