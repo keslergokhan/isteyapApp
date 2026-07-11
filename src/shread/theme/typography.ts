@@ -1,3 +1,5 @@
+import { type TextStyle } from "react-native";
+
 export const typography = {
 
 
@@ -9,7 +11,7 @@ export const typography = {
       fontSize:32,
       lineHeight:40,
       fontWeight:"700",
-    },
+    } as TextStyle,
   
   
     // Bölüm başlığı
@@ -20,7 +22,7 @@ export const typography = {
       fontSize:24,
       lineHeight:32,
       fontWeight:"700",
-    },
+    } as TextStyle,
   
   
     // Alt başlık
@@ -31,7 +33,7 @@ export const typography = {
       fontSize:20,
       lineHeight:28,
       fontWeight:"600",
-    },
+    } as TextStyle,
   
   
     // Normal önemli metin
@@ -43,7 +45,7 @@ export const typography = {
       fontSize:16,
       lineHeight:24,
       fontWeight:"400",
-    },
+    } as TextStyle,
   
   
     // Küçük açıklama metni
@@ -55,7 +57,7 @@ export const typography = {
       fontSize:14,
       lineHeight:20,
       fontWeight:"400",
-    },
+    } as TextStyle,
   
   
     // Çok küçük bilgi metni
@@ -67,7 +69,7 @@ export const typography = {
       fontSize:12,
       lineHeight:16,
       fontWeight:"400",
-    },
+    } as TextStyle,
   
   
     // Buton yazısı
@@ -75,7 +77,7 @@ export const typography = {
       fontSize:14,
       lineHeight:20,
       fontWeight:"600",
-    },
+    } as TextStyle,
   
   
     // Input yazısı
@@ -83,6 +85,5 @@ export const typography = {
       fontSize:16,
       lineHeight:24,
       fontWeight:"400",
-    }
-  
-  };
+    } as TextStyle
+};

@@ -1,17 +1,17 @@
-import {colors} from "@/shread/theme/color"
+import {color} from "@/shread/theme/color"
 import {typography} from "@/shread/theme/typography"
-import {spacing} from "@/shread/theme/spacing.js";
+import {spacing} from "@/shread/theme/spacing";
 
 
 const theme = {
-    colors,
+    color,
     typography,
     spacing
 }
 
 type theme = typeof theme;
-type colors = typeof colors;
-type typography = typeof typography;
-type spacing = typeof spacing;
+type colors = typeof color;
+type typographys = typeof typography;
+type spacings = typeof spacing;
 export default theme;
-export {colors,typography,spacing}
+export {colors,typographys,spacings}

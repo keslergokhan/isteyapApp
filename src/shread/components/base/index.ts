@@ -1,0 +1,1 @@
+export {DefaultVariant} from "./Theme.variand.types.js"
