@@ -1,9 +1,9 @@
 import { ViewStyle } from "react-native";
-import {DefaultVariant} from "./../base";
+import {Variant} from "./../base";
 
 export interface AppButtonProps {
   children?: React.ReactNode;
   disabled?: boolean;
-  variant?:DefaultVariant;
+  variant?:Variant;
   styles?:ViewStyle
 }

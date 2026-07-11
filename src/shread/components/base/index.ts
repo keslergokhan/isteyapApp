@@ -1,1 +1,1 @@
-export {DefaultVariant} from "./Theme.variand.types.js"
+export {Variant,AppVariantStyles} from "./Theme.variand.types.js"

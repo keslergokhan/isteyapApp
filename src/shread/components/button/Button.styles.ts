@@ -1,5 +1,6 @@
 import { StyleSheet, TextStyle, ViewStyle } from "react-native";
 import theme from "@/shread/theme";
+import { AppVariantStyles } from "../base/Theme.variand.types";
 
 
 const buttonBaseContainer : ViewStyle = {
@@ -10,7 +11,7 @@ const buttonBaseContainer : ViewStyle = {
     justifyContent: "center",
 }
 
-export const ButtonStyles = StyleSheet.create({
+export const ButtonStyles = StyleSheet.create<AppVariantStyles<TextStyle>>({
   primary:{
     ...buttonBaseContainer,
     backgroundColor: theme.color.primary,
@@ -26,7 +27,7 @@ export const ButtonStyles = StyleSheet.create({
     backgroundColor: "transparent",
     borderWidth: 2,
     borderColor: theme.color.border,
-  },
+  } as ViewStyle,
   pressed: {
     opacity: 0.85,
   }
@@ -37,7 +38,7 @@ const textBaseContainer : TextStyle = {
   fontWeight: theme.typography.button.fontWeight,
 }
 
-export const ButtonChildrenStyles = StyleSheet.create({
+export const ButtonChildrenStyles = StyleSheet.create<AppVariantStyles<TextStyle>>({
   primary:{
     ...textBaseContainer,
     color: theme.color.white
