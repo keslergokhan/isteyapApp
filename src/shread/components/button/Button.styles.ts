@@ -34,8 +34,7 @@ export const ButtonStyles = StyleSheet.create<AppVariantStyles<TextStyle>>({
 });
 
 const textBaseContainer : TextStyle = {
-  fontSize: theme.typography.button.fontSize,
-  fontWeight: theme.typography.button.fontWeight,
+  ...theme.typography.button
 }
 
 export const ButtonChildrenStyles = StyleSheet.create<AppVariantStyles<TextStyle>>({

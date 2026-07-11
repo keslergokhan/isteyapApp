@@ -1,6 +1,7 @@
 import { View,Text,ScrollView } from "react-native";
 import theme from ".";
 import { AppButton, AppCard,AppText,AppH1Text } from "../components";
+import { AppSmallText } from "../components/text/Text";
 
 export function ThemeTest() {
   return (
@@ -154,7 +155,7 @@ export function ThemeTest() {
 
       <AppCard styles={{marginTop:20}} variant="outline">
         <AppH1Text variant="outline">H1 NULL</AppH1Text>
-        <AppH1Text>H1 NULL</AppH1Text>
+        <AppSmallText variant="outline"> MSALL OUTLİNE</AppSmallText>
         <Text>outline card</Text>
         <AppText variant="outline">outline text</AppText>
       </AppCard>
