@@ -9,4 +9,5 @@ type AppVariantStylesBase<TStyle extends TextStyle | ViewStyle> =
 
 export interface AppVariantStyles<TStyle extends TextStyle | ViewStyle> extends AppVariantStylesBase<TStyle> {
     pressed?:TStyle;
+    basic?:TStyle;
 }

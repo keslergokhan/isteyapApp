@@ -7,7 +7,8 @@ import {radius_} from "@/shread/theme/radius"
 const theme = {
     color,
     typography,
-    spacing
+    spacing,
+    radius:radius_
 }
 
 type theme = typeof theme;

@@ -1,3 +1,4 @@
+import theme from '@/shread/theme';
 import { ThemeTest } from '@/shread/theme/ThemeTest';
 import { StatusBar } from 'expo-status-bar';
 import { StyleSheet, Text, View } from 'react-native';

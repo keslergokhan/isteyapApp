@@ -8,6 +8,7 @@ export const typography = {
     // - Screen title
     // - Dashboard başlığı
     h1:{
+      fontFamily:"Arial",
       fontSize:32,
       lineHeight:40,
       fontWeight:"700",
@@ -19,6 +20,7 @@ export const typography = {
     // - Card title
     // - Section header
     h2:{
+      fontFamily:"Arial",
       fontSize:24,
       lineHeight:32,
       fontWeight:"700",
@@ -30,6 +32,7 @@ export const typography = {
     // - Component title
     // - Modal title
     h3:{
+      fontFamily:"Arial",
       fontSize:20,
       lineHeight:28,
       fontWeight:"600",
@@ -42,6 +45,7 @@ export const typography = {
     // - Button text
     // - List title
     body:{
+      fontFamily:"Arial",
       fontSize:16,
       lineHeight:24,
       fontWeight:"400",
@@ -54,6 +58,7 @@ export const typography = {
     // - Helper text
     // - Secondary information
     bodySmall:{
+      fontFamily:"Arial",
       fontSize:14,
       lineHeight:20,
       fontWeight:"400",
@@ -66,6 +71,7 @@ export const typography = {
     // - Timestamp
     // - Metadata
     caption:{
+      fontFamily:"Arial",
       fontSize:12,
       lineHeight:16,
       fontWeight:"400",
@@ -74,6 +80,7 @@ export const typography = {
   
     // Buton yazısı
     button:{
+      fontFamily:"Arial",
       fontSize:14,
       lineHeight:20,
       fontWeight:"600",
@@ -82,6 +89,7 @@ export const typography = {
   
     // Input yazısı
     input:{
+      fontFamily:"Arial",
       fontSize:16,
       lineHeight:24,
       fontWeight:"400",
