@@ -9,8 +9,6 @@ export default function App() {
     <View style={styles.container} >
       <Text>Open up App.tsx to start working on your app! deneme </Text>
       <StatusBar style="auto" />
-      <ThemeTest></ThemeTest>
-      
     </View>
   );
 }
