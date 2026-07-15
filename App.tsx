@@ -2,11 +2,14 @@ import MainNavigator from '@/app/navigations/MainNavigator';
 import theme from '@/shread/theme';
 import { StatusBar } from 'expo-status-bar';
 import { StyleSheet, Text, View } from 'react-native';
+import { SafeAreaProvider } from "react-native-safe-area-context";
 
 export default function App() {
   
   return (
-    <MainNavigator></MainNavigator>
+    <SafeAreaProvider>
+      <MainNavigator></MainNavigator>
+    </SafeAreaProvider>
   );
 }
 
