@@ -1,6 +1,7 @@
 import { NavigationContainer, useNavigation } from "@react-navigation/native";
 import AuthNavigator from "./AuthNavigator";
 import { createNativeStackNavigator } from "@react-navigation/native-stack";
+import { MainLayout } from "@/shread/layouts";
 
 export default function MainNavigator() {
 

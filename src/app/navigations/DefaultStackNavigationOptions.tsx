@@ -3,5 +3,4 @@ import { AppHead,AppCard } from "@/shread/components";
 
 export const defaultStackNavigationOptions:NativeStackNavigationOptions={
     headerShown:true,
-    header:()=><AppHead/>
 }
