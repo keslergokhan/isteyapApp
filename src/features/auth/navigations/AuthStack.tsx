@@ -1,32 +1,16 @@
 import { createNativeStackNavigator } from "@react-navigation/native-stack";
-import LoginScreen from "../screens/LoginScreen";
-import WelcomeSCreen from "../screens/WelcomeScreen";
 import { AuthStackParamList } from "./AuthStack.types";
-import RegisterScreen from "../screens/RegisterScreen";
-import { defaultStackNavigationOptions } from "@/app/navigations/DefaultStackNavigationOptions";
-import { MainLayout } from "@/shread/layouts";
+import { LoginScreen,RegisterScreen } from "..";
 
 export default function AuthStack() {
 
     const Stack = createNativeStackNavigator<AuthStackParamList>();
     return (
-        <Stack.Navigator initialRouteName="Welcome" >
+        <Stack.Navigator initialRouteName="Login" >
 
-            <Stack.Group screenOptions={defaultStackNavigationOptions} 
-                screenLayout={({children})=>{
-                    return (<MainLayout>
-                        {children}
-                    </MainLayout>)
-                }}>
-                <Stack.Screen name="Login" component={LoginScreen} />
-                
-            </Stack.Group>
+            <Stack.Screen name="Login" component={LoginScreen} />
+            <Stack.Screen name="Register" component={RegisterScreen} options={{ title: "Kayıt Ol",}} />
             
-            <Stack.Screen name="Welcome" component={WelcomeSCreen} />
-            <Stack.Screen name="Register" component={RegisterScreen} 
-                options={{
-                    title: "Kayıt Ol",
-                }} />
         </Stack.Navigator>
     );
 }
