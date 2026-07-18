@@ -5,7 +5,7 @@ export default function WelcomeScreen(){
     const navigation = useNavigation();
     return (
         <View>
-            <Text>Merhaba hoşgeldiniz</Text>
+            <Text>Merhaba hoşgeldiniz test</Text>
             <Button title="Giriş" onPress={()=>{
                 navigation.navigate("AuthStack" as never);
             }}></Button>
