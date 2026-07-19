@@ -4,6 +4,7 @@ import WelcomeStack from "@/features/welcome/navigations/WelcomeStack";
 import { Text, View } from "react-native";
 import { CreateListingStack, ListingStack } from "@/features/listing";
 import { ChatStack } from "@/features/chats";
+import { ProfileStack } from "@/features/profile";
 
 export default function HomeNavigator() {
     const Tab = createBottomTabNavigator();
@@ -15,12 +16,11 @@ export default function HomeNavigator() {
                 borderRadius:100,
                 height:50,
                 bottom:40,
+                width:"95%",
+                display:"flex",
+                margin:"auto",
             },
         }}>
-            <Tab.Screen name="HomeStack" component={HomeStack} options={{tabBarButton:(props)=>{
-                return <MyButton {...props}>Ana Sayfa</MyButton>
-            }}}></Tab.Screen>
-
 
             <Tab.Screen name="ListingStack" component={ListingStack} options={{tabBarButton:(props)=>{
                 return <MyButton {...props}>İlanlar</MyButton>
@@ -30,8 +30,16 @@ export default function HomeNavigator() {
                 return <MyButton {...props}>Sohbet</MyButton>
             }}}></Tab.Screen>
 
+            <Tab.Screen name="HomeStack" component={HomeStack} options={{tabBarButton:(props)=>{
+                return <MyButton {...props}>Ana Sayfa</MyButton>
+            }}}></Tab.Screen>
+
             <Tab.Screen name="CreateListingStack" component={CreateListingStack} options={{tabBarButton:(props)=>{
                 return <MyButton {...props}>İlan Ver</MyButton>
+            }}}></Tab.Screen>
+
+            <Tab.Screen name="ProfileStack" component={ProfileStack} options={{tabBarButton:(props)=>{
+                return <MyButton {...props}>Hesabım</MyButton>
             }}}></Tab.Screen>
 
         </Tab.Navigator>
