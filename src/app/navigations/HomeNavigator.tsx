@@ -1,12 +1,51 @@
 import HomeStack from "@/features/home/navigations/HomeStack";
-import { createNativeStackNavigator } from "@react-navigation/native-stack";
-import { defaultStackNavigationOptions } from "./DefaultStackNavigationOptions";
+import { BottomTabBarButtonProps, createBottomTabNavigator } from "@react-navigation/bottom-tabs";
+import WelcomeStack from "@/features/welcome/navigations/WelcomeStack";
+import { Text, View } from "react-native";
+import { CreateListingStack, ListingStack } from "@/features/listing";
+import { ChatStack } from "@/features/chats";
 
 export default function HomeNavigator() {
-    const Stack = createNativeStackNavigator();
+    const Tab = createBottomTabNavigator();
     return (
-        <Stack.Navigator screenOptions={defaultStackNavigationOptions}>
-            <Stack.Screen name="HomeStack" component={HomeStack}></Stack.Screen>
-        </Stack.Navigator>
+        <Tab.Navigator initialRouteName="HomeStack" screenOptions={{
+            headerShown: false,
+            tabBarStyle:{
+                backgroundColor:"red",
+                borderRadius:100,
+                height:50,
+                bottom:40,
+            },
+        }}>
+            <Tab.Screen name="HomeStack" component={HomeStack} options={{tabBarButton:(props)=>{
+                return <MyButton {...props}>Ana Sayfa</MyButton>
+            }}}></Tab.Screen>
+
+
+            <Tab.Screen name="ListingStack" component={ListingStack} options={{tabBarButton:(props)=>{
+                return <MyButton {...props}>İlanlar</MyButton>
+            }}}></Tab.Screen>
+
+            <Tab.Screen name="ChatStack" component={ChatStack} options={{tabBarButton:(props)=>{
+                return <MyButton {...props}>Sohbet</MyButton>
+            }}}></Tab.Screen>
+
+            <Tab.Screen name="CreateListingStack" component={CreateListingStack} options={{tabBarButton:(props)=>{
+                return <MyButton {...props}>İlan Ver</MyButton>
+            }}}></Tab.Screen>
+
+        </Tab.Navigator>
+    )
+}
+
+interface MyButtonProps extends BottomTabBarButtonProps{
+    children: React.ReactNode;
+}
+
+function MyButton(props: BottomTabBarButtonProps){
+    return (
+        <View>
+            <Text>{props.children}</Text>
+        </View>
     )
 }

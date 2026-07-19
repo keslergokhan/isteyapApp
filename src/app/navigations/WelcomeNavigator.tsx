@@ -8,9 +8,7 @@ export default function WelcomeNavigator() {
     const Stack = createNativeStackNavigator();
     return (
         <Stack.Navigator initialRouteName="WelcomeStack" screenOptions={defaultStackNavigationOptions}>
-            <Stack.Screen name="WelcomeStack" component={WelcomeStack} ></Stack.Screen>
             <Stack.Screen name="AuthStack" component={AuthStack}></Stack.Screen>
-            <Stack.Screen name="HomeStack" component={HomeStack}></Stack.Screen>
         </Stack.Navigator>
     );
 }
