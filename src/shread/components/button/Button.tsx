@@ -1,7 +1,7 @@
 import {ButtonStyles,ButtonChildrenStyles} from "./Button.styles";
 import { Pressable,Text } from "react-native";
-import { AppButtonProps } from "./Button.types";
 import { Variant } from "../base";
+import AppButtonProps from "./Button.types";
 
 
 export default function AppButton(props:AppButtonProps){
