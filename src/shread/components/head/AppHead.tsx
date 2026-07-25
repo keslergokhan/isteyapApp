@@ -41,7 +41,7 @@ export default function AppHead() {
 
             {/* Bildirim İkonu */}
             <TouchableOpacity style={AppHeadStyles.iconCircle}>
-              <Ionicons name="notifications" size={18} color="#FFFFFF" />
+              <Ionicons name="notifications" size={18} color={theme.color.text.secondary} />
             </TouchableOpacity>
           </View>
         </View>

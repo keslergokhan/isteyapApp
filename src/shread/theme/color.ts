@@ -1,4 +1,4 @@
-const primaryBase = "#1E1E1E"; // Ana marka rengi (VS Code benzeri mavi) 007ACC
+const primaryBase = "#1E1E1E"; // Ana marka rengi (VS Code benzeri mavi) 
 
 export const color = {
   /**
@@ -97,6 +97,7 @@ export const color = {
      */
     secondary: "#CCCCCC",
 
+    secondaryLight:"#007ACC"
    
   },
 

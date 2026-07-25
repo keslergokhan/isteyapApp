@@ -18,10 +18,15 @@ const TabBarButtonStyles = StyleSheet.create({
 
 export const TabBarButtonFocusStyles = StyleSheet.create({
     content:{
-        ...TabBarButtonStyles.content
+        ...TabBarButtonStyles.content,
+        borderStyle:"solid",
+        borderColor:theme.color.text.secondaryLight,
+        borderBottomWidth:2,
+        paddingBottom:5
     },
     text:{
-        ...TabBarButtonStyles.text
+        ...TabBarButtonStyles.text,
+        color:theme.color.text.secondaryLight,
     },
 });
 
