@@ -10,11 +10,12 @@ import {
 import { Ionicons, MaterialIcons, Feather } from "@expo/vector-icons";
 import AppHeadProps from "./AppHead.types";
 import AppHeadStyles from "./AppHead.styles";
+import theme from "@/shread/theme";
 
 export default function AppHead() {
   return (
     <View>
-      <StatusBar barStyle="light-content" backgroundColor="#121212" />
+      <StatusBar barStyle="light-content" />
       <View style={AppHeadStyles.container}>
         {/* Üst Satır: Logo, Konum ve Sağ İkonlar */}
         <View style={AppHeadStyles.topRow}>
@@ -23,14 +24,14 @@ export default function AppHead() {
 
           {/* Konum Seçici Buton */}
           <TouchableOpacity style={AppHeadStyles.locationButton} activeOpacity={0.8}>
-            <Ionicons name="location-sharp" size={16} color="#F34757" />
+            <Ionicons name="location-sharp" size={16} color={theme.color.text.secondary} />
             <Text style={AppHeadStyles.locationText} numberOfLines={1}>
               İstanbul, Ümr...
             </Text>
             <MaterialIcons
               name="keyboard-arrow-down"
               size={16}
-              color="#F34757"
+              color={theme.color.text.secondary}
             />
           </TouchableOpacity>
 

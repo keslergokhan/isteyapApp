@@ -9,6 +9,7 @@ export default function DefaultLayout(props:DetailLayoutProps){
         <MainLayout>
             <View>
                 <AppHead></AppHead>
+                {props.children}
             </View>
         </MainLayout>
     );

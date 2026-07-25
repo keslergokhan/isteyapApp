@@ -7,12 +7,7 @@ export default function ProfileStack() {
 
     const Stack = createNativeStackNavigator();
     return (
-        <Stack.Navigator initialRouteName="Profile" screenOptions={defaultStackNavigationOptions} screenLayout={({children})=>{
-            return (
-            <DefaultLayout>
-                {children}
-            </DefaultLayout>)
-        }}>
+        <Stack.Navigator initialRouteName="Profile" screenOptions={defaultStackNavigationOptions} >
             <Stack.Screen name="Profile" component={ProfileScreen}></Stack.Screen>
         </Stack.Navigator>
     );

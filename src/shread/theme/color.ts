@@ -1,4 +1,4 @@
-const primaryBase = "#007ACC"; // Ana marka rengi (VS Code benzeri mavi)
+const primaryBase = "#1E1E1E"; // Ana marka rengi (VS Code benzeri mavi) 007ACC
 
 export const color = {
   /**
@@ -22,7 +22,7 @@ export const color = {
    * - Selected row background
    * - Hover / Pressed state
    */
-  primarySoft: "#E8F4FF",
+  primarySoft: "#3E3E42",
 
   /**
    * Ana rengin açık tonu.
@@ -33,18 +33,7 @@ export const color = {
    * - Bilgilendirme kutuları
    * - Hafif vurgu gereken alanlar
    */
-  primaryLight: "#BDE0FF",
-
-  /**
-   * Ana rengin koyu tonu.
-   *
-   * Kullanım Alanları:
-   * - Primary text
-   * - Hover state
-   * - Icon renkleri
-   * - Kontrast gereken alanlar
-   */
-  primaryDark: "#005A99",
+  primaryLight: "#007ACC",
 
   /**
    * Uygulamanın varsayılan sayfa arka plan rengi.
@@ -84,7 +73,7 @@ export const color = {
    * - Table row separator
    * - Section divider
    */
-  divider: "#EAF2F8",
+  divider: "#3E3E42",
 
   text: {
 
@@ -96,7 +85,7 @@ export const color = {
      * - Form label
      * - Ana içerik
      */
-    main: "#0F172A",
+    main: "#D4D4D4",
 
     /**
      * İkincil metin rengi.
@@ -106,17 +95,9 @@ export const color = {
      * - Helper text
      * - Metadata
      */
-    secondary: "#475569",
+    secondary: "#CCCCCC",
 
-    /**
-     * Düşük öncelikli metin rengi.
-     *
-     * Kullanım Alanları:
-     * - Placeholder
-     * - Disabled text
-     * - Tarih / Saat
-     */
-    muted: "#94A3B8",
+   
   },
 
   /**

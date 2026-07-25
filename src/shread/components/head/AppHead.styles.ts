@@ -15,7 +15,7 @@ const AppHeadStyles = StyleSheet.create({
         marginBottom: 16,
     },
     logoText: {
-        color: '#FFFFFF',
+        color: theme.color.text.main,
         fontSize: 32,
         fontWeight: 'bold',
         fontStyle: 'italic', // Letgo'nun el yazısı hissini yakalamak için
@@ -24,7 +24,7 @@ const AppHeadStyles = StyleSheet.create({
     locationButton: {
         flexDirection: 'row',
         alignItems: 'center',
-        backgroundColor: theme.color.primaryDark,
+        backgroundColor: theme.color.primarySoft,
         paddingVertical: 10,
         paddingHorizontal: 12,
         borderRadius: 20,
@@ -33,7 +33,7 @@ const AppHeadStyles = StyleSheet.create({
         justifyContent: 'center',
     },
     locationText: {
-        color: '#FFFFFF',
+        color:theme.color.text.secondary,
         fontSize: 14,
         fontWeight: '600',
         marginHorizontal: 4,
@@ -47,10 +47,9 @@ const AppHeadStyles = StyleSheet.create({
         width: 38,
         height: 38,
         borderRadius: 19,
-        backgroundColor: theme.color.primaryDark,
+        backgroundColor: theme.color.primary,
         alignItems: 'center',
         justifyContent: 'center',
-        color:'red'
     },
     searchContainer: {
         flexDirection: 'row',
@@ -66,7 +65,6 @@ const AppHeadStyles = StyleSheet.create({
     },
     searchInput: {
         flex: 1,
-        color: 'black',
         fontSize: 15,
         paddingVertical: 0, // Android için ekstra dikey boşluğu sıfırlar
     },
