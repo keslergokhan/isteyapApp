@@ -17,7 +17,7 @@ export default function TabBarButton(props: TabBarButtonProps){
  
     return (
         <Pressable onPress={onPressHandler} style={({pressed})=>[props.focused ? TabBarButtonFocusStyles.content : TabBarButtonStyles.content ]}>
-            {props.IconName && <MaterialCommunityIcons name={props.IconName} size={24} color={props.focused ? theme.color.text.secondaryLight : theme.color.text.secondary}></MaterialCommunityIcons>}
+            {props.IconName && <MaterialCommunityIcons name={props.IconName} size={30} color={props.focused ? theme.color.text.secondaryLight : theme.color.text.secondary}></MaterialCommunityIcons>}
             <Text style={props.focused ? TabBarButtonFocusStyles.text : TabBarButtonStyles.text}>{props.options.title}</Text>
         </Pressable>
     )

@@ -1,7 +1,11 @@
+import { CategoryList } from "@/features/categories";
 import { View,Text } from "react-native";
 
 export default function HomeScreen() {
     return (
-        <View><Text>Anasayfa</Text></View>
+        <View>
+            <CategoryList></CategoryList>
+            <Text>Anasayfa</Text>
+        </View>
     );
 }

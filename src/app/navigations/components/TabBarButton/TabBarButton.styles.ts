@@ -11,7 +11,7 @@ const TabBarButtonStyles = StyleSheet.create({
     text:{
         color: theme.color.white,
         textAlign:"center",
-        fontSize:12
+        fontSize:13
     },
     
 });

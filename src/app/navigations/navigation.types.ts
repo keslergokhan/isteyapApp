@@ -1,8 +1,8 @@
-import { MaterialCommunityIcons } from "@expo/vector-icons";
+import { IconType } from "@/shread/types";
 
 export interface NavigationConfig{
     route:string;
     title:string;
-    iconName:keyof typeof MaterialCommunityIcons.glyphMap;
+    iconName:IconType;
     component:()=>React.JSX.Element
 }
