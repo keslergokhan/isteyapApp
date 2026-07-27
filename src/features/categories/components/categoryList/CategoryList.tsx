@@ -1,9 +1,10 @@
 import { View,Text,FlatList, ListRenderItemInfo, Pressable } from "react-native";
 import CategoryListProps, { CategoryFlatListItemProps } from "./CategoryList.types";
-import { Category } from "../../types/Category.type";
 import CategoryListStyles, { CategoryListItemStyles } from "./Category.styles";
 import { MaterialCommunityIcons } from "@expo/vector-icons";
-import theme from "@/shread/theme";
+import { useNavigation } from "@react-navigation/native";
+import CategoryStackRouteParams from "../../navigations/CategoryListStack.type";
+import { NativeStackNavigationProp } from "@react-navigation/native-stack";
 
 export default function CategoryList(props:CategoryListProps){
 
@@ -12,98 +13,104 @@ export default function CategoryList(props:CategoryListProps){
           id: 1,
           name: "Ev & Yaşam",
           color: "#F6D365",
-          iconName: "sofa-outline",
+          iconName: "sofa-outline"
         },
         {
           id: 2,
           name: "Araç",
           color: "#F8A978",
-          iconName: "car-outline",
+          iconName: "car-outline"
         },
         {
           id: 3,
           name: "Tesisat & Altyapı",
           color: "#F59BB3",
-          iconName: "pipe",
+          iconName: "pipe"
         },
         {
           id: 4,
           name: "Tadilat & Dekorasyon",
           color: "#B9A3F7",
-          iconName: "hammer-screwdriver",
+          iconName: "hammer-screwdriver"
         },
         {
           id: 5,
           name: "Bakım & Onarım",
           color: "#6ECBEA",
-          iconName: "wrench-outline",
+          iconName: "wrench-outline"
         },
         {
           id: 6,
           name: "Temizlik",
           color: "#F2A7D8",
-          iconName: "broom",
+          iconName: "broom"
         },
         {
           id: 7,
           name: "Elektrik & Elektronik",
           color: "#81C784",
-          iconName: "lightning-bolt-outline",
+          iconName: "lightning-bolt-outline"
         },
         {
           id: 8,
           name: "Nakliyat & Lojistik",
           color: "#F7B267",
-          iconName: "truck-fast-outline",
+          iconName: "truck-fast-outline"
         },
         {
           id: 9,
           name: "Güvenlik Sistemleri",
           color: "#F48FB1",
-          iconName: "shield-lock-outline",
+          iconName: "shield-lock-outline"
         },
         {
           id: 10,
           name: "İklimlendirme & Isıtma",
           color: "#80DEEA",
-          iconName: "air-conditioner",
+          iconName: "air-conditioner"
         },
         {
           id: 11,
           name: "Peyzaj & Bahçe",
           color: "#AED581",
-          iconName: "flower-outline",
+          iconName: "flower-outline"
         },
         {
           id: 12,
           name: "Kuru Temizleme & Terzi",
           color: "#CE93D8",
-          iconName: "hanger",
+          iconName: "hanger"
         },
         {
           id: 13,
           name: "Kişisel Bakım & Sağlık",
           color: "#FFAB91",
-          iconName: "heart-pulse",
+          iconName: "heart-pulse"
         },
         {
           id: 14,
           name: "Özel Ders & Eğitim",
           color: "#9FA8DA",
-          iconName: "school-outline",
+          iconName: "school-outline"
         },
         {
           id: 15,
           name: "Organizasyon & Etkinlik",
           color: "#80CBC4",
-          iconName: "party-popper",
+          iconName: "party-popper"
         },
       ];
 
+
+    const navigation = useNavigation<NativeStackNavigationProp<CategoryStackRouteParams>>();
     
+    function CategoryListItemOnPress(){
+      navigation.push("CategoryList",{baseCategoryId:55});
+    }
+
     function CategoryListItem(props:ListRenderItemInfo<CategoryFlatListItemProps>){
         return (
-            <Pressable style={CategoryListItemStyles.container}>
+            <Pressable style={CategoryListItemStyles.container} onPress={CategoryListItemOnPress}>
                 <View style={[CategoryListItemStyles.iconContainer,{backgroundColor:props.item.color}]}>
                     <MaterialCommunityIcons name={props.item.iconName} size={30} color={"white"} />
                 </View>

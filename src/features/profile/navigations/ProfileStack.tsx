@@ -1,5 +1,4 @@
 import { defaultStackNavigationOptions } from "@/app/navigations/DefaultStackNavigationOptions";
-import { DefaultLayout } from "@/shread/layouts";
 import { createNativeStackNavigator } from "@react-navigation/native-stack";
 import ProfileScreen from "../screens/ProfileScreen";
 
