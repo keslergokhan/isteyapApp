@@ -2,7 +2,7 @@ import HomeStack from "@/features/home/navigations/HomeStack";
 import { ChatStack } from "@/features/chats";
 import { CreateListingStack, ListingStack } from "@/features/listing";
 import { ProfileStack } from "@/features/profile";
-import { NavigationConfig } from "../Navigation.types";
+import { NavigationConfig } from "../types/Navigation.types";
  const HomeNavigationConfig:NavigationConfig[] = [
     {
         route:"HomeStack",
@@ -33,7 +33,7 @@ import { NavigationConfig } from "../Navigation.types";
         component: ProfileStack,
         title: "Hesabım",
         iconName: "account"
-    }
+    },
 ] 
 
 export default HomeNavigationConfig;

@@ -11,7 +11,8 @@ import { NavigationHelpers, ParamListBase, Route } from "@react-navigation/nativ
 import { useCallback } from "react";
 import GLobalTabBar from "./components/GlobalTabBar/GlobalTabBar";
 import HomeNavigationConfig from "./configs/HomeNavigation.config";
-import { NavigationConfig } from "./Navigation.types.ts";
+import { NavigationConfig } from "./types/Navigation.types";
+import { CategoryListStack } from "@/features/categories";
 
 
 export default function HomeNavigator() {

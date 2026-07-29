@@ -105,7 +105,7 @@ export default function CategoryList(props:CategoryListProps){
     const navigation = useNavigation<NativeStackNavigationProp<CategoryStackRouteParams>>();
     
     function CategoryListItemOnPress(){
-      navigation.push("CategoryList",{baseCategoryId:55});
+      navigation.navigate("CategoryList",{baseCategoryId:55});
     }
 
     function CategoryListItem(props:ListRenderItemInfo<CategoryFlatListItemProps>){
