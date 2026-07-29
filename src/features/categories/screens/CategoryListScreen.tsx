@@ -1,6 +1,6 @@
-import { View } from "react-native";
+import { View,Text } from "react-native";
 
 export default function CategoryScreen(){
 
-    return (<View>Kategoriler</View>);
+    return (<View><Text>Kategoriler</Text></View>);
 }

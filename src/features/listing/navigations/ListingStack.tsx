@@ -1,7 +1,7 @@
-import { defaultStackNavigationOptions } from "@/app/navigations/DefaultStackNavigationOptions";
 import { DefaultLayout } from "@/shread/layouts";
 import { createNativeStackNavigator } from "@react-navigation/native-stack";
 import ListingScreen from "../screens/ListingScreen";
+import { defaultStackNavigationOptions } from "@/app/navigations/configs/DefaultStackNavigationOptions";
 
 export default function ListingStack() {
 

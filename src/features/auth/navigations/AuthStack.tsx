@@ -1,7 +1,7 @@
 import { createNativeStackNavigator } from "@react-navigation/native-stack";
 import { AuthStackParamList } from "./AuthStack.types";
 import { LoginScreen,RegisterScreen } from "..";
-import { defaultStackNavigationOptions } from "@/app/navigations/DefaultStackNavigationOptions";
+import { defaultStackNavigationOptions } from "@/app/navigations/configs/DefaultStackNavigationOptions";
 
 export default function AuthStack() {
 

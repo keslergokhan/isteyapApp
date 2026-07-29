@@ -1,7 +1,7 @@
 import { createNativeStackNavigator } from "@react-navigation/native-stack";
 import ChatListScreen from "../screens/ChatListScreen";
-import { defaultStackNavigationOptions } from "@/app/navigations/DefaultStackNavigationOptions";
 import { DefaultLayout } from "@/shread/layouts";
+import { defaultStackNavigationOptions } from "@/app/navigations/configs/DefaultStackNavigationOptions";
 
 export default function ChatStack() {
 

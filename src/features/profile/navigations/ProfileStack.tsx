@@ -1,6 +1,6 @@
-import { defaultStackNavigationOptions } from "@/app/navigations/DefaultStackNavigationOptions";
 import { createNativeStackNavigator } from "@react-navigation/native-stack";
 import ProfileScreen from "../screens/ProfileScreen";
+import { defaultStackNavigationOptions } from "@/app/navigations/configs/DefaultStackNavigationOptions";
 
 export default function ProfileStack() {
 

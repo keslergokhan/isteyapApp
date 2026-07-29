@@ -2,7 +2,7 @@ import TabBarStyles from "./GlobalTabBar.styles"
 import GlobalTabBarProps from "./GlobalTabBar.types";
 import { View } from "react-native";
 import TabBarButton from "../TabBarButton/TabBarButton";
-import HomeNavigationConfig from "../../configs/HomeNavigation.config";
+import HomeNavigationConfig from "../../configs/AppNavigation.config";
 
 
 export default function GLobalTabBar(props:GlobalTabBarProps){

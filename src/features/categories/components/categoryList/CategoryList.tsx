@@ -3,8 +3,9 @@ import CategoryListProps, { CategoryFlatListItemProps } from "./CategoryList.typ
 import CategoryListStyles, { CategoryListItemStyles } from "./Category.styles";
 import { MaterialCommunityIcons } from "@expo/vector-icons";
 import { useNavigation } from "@react-navigation/native";
-import CategoryStackRouteParams from "../../navigations/CategoryListStack.type";
+import CategoryStackRouteParams from "../../navigations/CategoryListStackParam.type";
 import { NativeStackNavigationProp } from "@react-navigation/native-stack";
+import RootNavigatorParam from "@/app/navigations/types/RootNavigatorParam.types";
 
 export default function CategoryList(props:CategoryListProps){
 
@@ -102,10 +103,10 @@ export default function CategoryList(props:CategoryListProps){
       ];
 
 
-    const navigation = useNavigation<NativeStackNavigationProp<CategoryStackRouteParams>>();
+    const navigation = useNavigation<NativeStackNavigationProp<RootNavigatorParam>>();
     
     function CategoryListItemOnPress(){
-      navigation.navigate("CategoryList",{baseCategoryId:55});
+      navigation.navigate("CategoryNavigator",{screen:"CategoryList",params:{baseCategoryId:55}});
     }
 
     function CategoryListItem(props:ListRenderItemInfo<CategoryFlatListItemProps>){
