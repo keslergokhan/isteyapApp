@@ -1,4 +1,4 @@
-import { DefaultLayout } from "@/shread/layouts";
+import { AppLayout } from "@/shread/layouts";
 import { createNativeStackNavigator } from "@react-navigation/native-stack";
 import ListingScreen from "../screens/ListingScreen";
 import { defaultStackNavigationOptions } from "@/app/navigations/configs/DefaultStackNavigationOptions";
@@ -9,9 +9,9 @@ export default function ListingStack() {
     return (
         <Stack.Navigator initialRouteName="Listing" screenOptions={defaultStackNavigationOptions} screenLayout={({children})=>{
             return (
-            <DefaultLayout>
+            <AppLayout>
                 {children}
-            </DefaultLayout>)
+            </AppLayout>)
         }}>
             <Stack.Screen name="Listing" component={ListingScreen}></Stack.Screen>
         </Stack.Navigator>

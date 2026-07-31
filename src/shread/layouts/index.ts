@@ -1,4 +1,4 @@
 import MainLayout from "./mainLayout/MainLayout";
-import DefaultLayout from "./detailLayout/DetailLayout";
+import AppLayout from "./appLayout/AppLayout";
 
-export {MainLayout,DefaultLayout}
+export {MainLayout,AppLayout}
