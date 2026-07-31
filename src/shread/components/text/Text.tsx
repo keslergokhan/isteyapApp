@@ -1,6 +1,6 @@
 import {Text} from "react-native";
-import { AppTextProps } from "./Text.types";
 import { AppTextStyles,AppTitleTextStyles,AppH2TextStyles,AppH3TextStyles,AppSmallTextStyles } from "./Text.styles";
+import AppTextProps from "./Text.types";
 
 export default function AppText(props:AppTextProps){
     const variandStyles = props.variant ? AppTextStyles[props.variant] : AppTextStyles.basic;

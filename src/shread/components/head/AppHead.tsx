@@ -1,14 +1,11 @@
 import {
-  StyleSheet,
   Text,
   View,
   TextInput,
   TouchableOpacity,
-  SafeAreaView,
   StatusBar,
 } from "react-native";
 import { Ionicons, MaterialIcons, Feather } from "@expo/vector-icons";
-import AppHeadProps from "./AppHead.types";
 import AppHeadStyles from "./AppHead.styles";
 import theme from "@/shread/theme";
 

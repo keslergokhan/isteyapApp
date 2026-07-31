@@ -24,7 +24,7 @@ export const AppCardStyles = StyleSheet.create<AppVariantStyles<ViewStyle>>({
   },
   secondary: {
     ...BaseContainer,
-    backgroundColor: theme.color.primaryDark, // Hafif mavi renk için color.primarySoft kullanıldı
+    backgroundColor: theme.color.primarySoft, // Hafif mavi renk için color.primarySoft kullanıldı
     borderWidth: 1,
     borderColor: "transparent", // Ana mavi renk için color.primary kullanıldı
   },

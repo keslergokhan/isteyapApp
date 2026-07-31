@@ -3,7 +3,6 @@ import CategoryListProps, { CategoryFlatListItemProps } from "./CategoryList.typ
 import CategoryListStyles, { CategoryListItemStyles } from "./Category.styles";
 import { MaterialCommunityIcons } from "@expo/vector-icons";
 import { useNavigation } from "@react-navigation/native";
-import CategoryStackRouteParams from "../../navigations/CategoryListStackParam.type";
 import { NativeStackNavigationProp } from "@react-navigation/native-stack";
 import RootNavigatorParam from "@/app/navigations/types/RootNavigatorParam.types";
 
