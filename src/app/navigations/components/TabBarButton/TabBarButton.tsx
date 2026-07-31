@@ -4,6 +4,7 @@ import { Pressable,Text } from "react-native";
 import TabBarButtonStyles, { TabBarButtonFocusStyles } from "./TabBarButton.styles";
 import MaterialCommunityIcons from '@expo/vector-icons/MaterialCommunityIcons';
 import theme from "@/shread/theme";
+import { AppText } from "@/shread/components";
 
 export default function TabBarButton(props: TabBarButtonProps){
 
@@ -18,7 +19,7 @@ export default function TabBarButton(props: TabBarButtonProps){
     return (
         <Pressable onPress={onPressHandler} style={({pressed})=>[props.focused ? TabBarButtonFocusStyles.content : TabBarButtonStyles.content ]}>
             {props.IconName && <MaterialCommunityIcons name={props.IconName} size={30} color={props.focused ? theme.color.text.secondaryLight : theme.color.text.secondary}></MaterialCommunityIcons>}
-            <Text style={props.focused ? TabBarButtonFocusStyles.text : TabBarButtonStyles.text}>{props.options.title}</Text>
+            <AppText style={props.focused ? TabBarButtonFocusStyles.text : TabBarButtonStyles.text}>{props.options.title}</AppText>
         </Pressable>
     )
 }

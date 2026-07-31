@@ -5,6 +5,7 @@ import { MaterialCommunityIcons } from "@expo/vector-icons";
 import { useNavigation } from "@react-navigation/native";
 import { NativeStackNavigationProp } from "@react-navigation/native-stack";
 import RootNavigatorParam from "@/app/navigations/types/RootNavigatorParam.types";
+import { AppText } from "@/shread/components";
 
 export default function CategoryList(props:CategoryListProps){
 
@@ -112,9 +113,9 @@ export default function CategoryList(props:CategoryListProps){
         return (
             <Pressable style={CategoryListItemStyles.container} onPress={CategoryListItemOnPress}>
                 <View style={[CategoryListItemStyles.iconContainer,{backgroundColor:props.item.color}]}>
-                    <MaterialCommunityIcons name={props.item.iconName} size={30} color={"white"} />
+                  <MaterialCommunityIcons name={props.item.iconName} size={30} color={"white"} />
                 </View>
-                <Text numberOfLines={3} ellipsizeMode="tail" style={CategoryListItemStyles.title}>{props.item.name}</Text>
+                <AppText numberOfLines={3} ellipsizeMode="tail" style={[CategoryListItemStyles.title]}>{props.item.name}</AppText>
             </Pressable>
         )
     }

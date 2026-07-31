@@ -1,8 +1,7 @@
-import { TextStyle } from "react-native";
+import { TextProps, TextStyle } from "react-native";
 import { Variant } from "../base";
 
-export default interface AppTextProps {
+export default interface AppTextProps extends TextProps {
     variant?: Variant;
-    styles?: TextStyle;
     children?: React.ReactNode;
 }

@@ -24,9 +24,9 @@ const CategoryListItemStyles = StyleSheet.create({
     iconContainer: {
         height:40,
         width:40,
-        borderRadius:53,
-        justifyContent: 'center',
-        alignItems: 'center',
+        alignItems:"center",
+        justifyContent:"center",
+        borderRadius:100
     },
     title:{
         color: 'white',
