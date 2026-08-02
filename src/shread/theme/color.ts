@@ -23,6 +23,7 @@ export const color = {
    * - Hover / Pressed state
    */
   primarySoft: "#3E3E42",
+  primarySoftLight:"#CCCCCC",
 
   /**
    * Ana rengin açık tonu.

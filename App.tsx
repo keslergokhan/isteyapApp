@@ -1,12 +1,14 @@
-import RootNavigator from '@/app/navigations/RootNavigator';
-import { StyleSheet, Text, View } from 'react-native';
-import { SafeAreaProvider } from "react-native-safe-area-context";
+import RootNavigator from "@/app/navigations/RootNavigator";
+import theme from "@/shread/theme";
+import { StyleSheet } from "react-native";
+import { SafeAreaProvider,SafeAreaView  } from "react-native-safe-area-context";
 
 export default function App() {
-  
   return (
     <SafeAreaProvider>
-      <RootNavigator></RootNavigator>
+      <SafeAreaView style={{ flex: 1,backgroundColor:theme.color.primary }}>
+        <RootNavigator></RootNavigator>
+      </SafeAreaView>
     </SafeAreaProvider>
   );
 }
@@ -14,7 +16,7 @@ export default function App() {
 const styles = StyleSheet.create({
   container: {
     flex: 1,
-    alignItems: 'center',
-    justifyContent: 'center',
+    alignItems: "center",
+    justifyContent: "center",
   },
 });

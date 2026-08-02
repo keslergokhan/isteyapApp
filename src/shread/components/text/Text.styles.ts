@@ -33,12 +33,11 @@ const BaseTitleContainer: TextStyle = {
 export const AppTitleTextStyles = StyleSheet.create<AppVariantStyles<TextStyle>>({
     primary: {
         ...BaseTitleContainer,
-        color: theme.color.white
-        
+        ...theme.typography.h1,
     },
     secondary: {
         ...BaseTitleContainer,
-        color: theme.color.white,
+        color: theme.color.text.secondary,
     },
     outline: {
         ...BaseTitleContainer,

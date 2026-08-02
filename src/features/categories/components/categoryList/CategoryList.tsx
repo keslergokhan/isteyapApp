@@ -1,4 +1,4 @@
-import { View,Text,FlatList, ListRenderItemInfo, Pressable } from "react-native";
+import { View,FlatList, ListRenderItemInfo, Pressable } from "react-native";
 import CategoryListProps, { CategoryFlatListItemProps } from "./CategoryList.types";
 import CategoryListStyles, { CategoryListItemStyles } from "./Category.styles";
 import { MaterialCommunityIcons } from "@expo/vector-icons";
@@ -105,13 +105,13 @@ export default function CategoryList(props:CategoryListProps){
 
     const navigation = useNavigation<NativeStackNavigationProp<RootNavigatorParam>>();
     
-    function CategoryListItemOnPress(){
+    async function CategoryListItemOnPress(props:CategoryFlatListItemProps){
       navigation.navigate("CategoryNavigator",{screen:"CategoryList",params:{baseCategoryId:55}});
     }
 
     function CategoryListItem(props:ListRenderItemInfo<CategoryFlatListItemProps>){
         return (
-            <Pressable style={CategoryListItemStyles.container} onPress={CategoryListItemOnPress}>
+            <Pressable style={CategoryListItemStyles.container} onPress={async ()=>{await CategoryListItemOnPress(props.item)}}>
                 <View style={[CategoryListItemStyles.iconContainer,{backgroundColor:props.item.color}]}>
                   <MaterialCommunityIcons name={props.item.iconName} size={30} color={"white"} />
                 </View>

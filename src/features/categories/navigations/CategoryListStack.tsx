@@ -17,7 +17,7 @@ export default function CategoryListStack(){
             }}
             >
             
-            <Stack.Screen name="CategoryList" component={CategoryScreen}></Stack.Screen>
+            <Stack.Screen name="CategoryList" options={{title:"Kategoriler"}} component={CategoryScreen}></Stack.Screen>
         </Stack.Navigator>
     );
 }
