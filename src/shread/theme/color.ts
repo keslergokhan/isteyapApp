@@ -43,7 +43,7 @@ export const color = {
    * - Screen background
    * - Main container background
    */
-  background: "#FFFFFF",
+  background: "#67676f",
 
   /**
    * Component yüzey rengi.
