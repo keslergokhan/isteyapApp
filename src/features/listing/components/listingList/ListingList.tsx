@@ -3,6 +3,7 @@ import ListingCard from "../listingCard/ListingCard";
 import ListingCardProps from "../listingCard/ListingCard.types";
 import { useState } from "react";
 import theme from "@/shread/theme";
+import { CategoryList } from "@/features/categories";
 
 export default function ListingList(){
 
@@ -59,6 +60,9 @@ export default function ListingList(){
                   tintColor="#007ACC"
                   colors={[theme.color.primarySoft]}
                 />
+              }
+              ListHeaderComponent={
+                <CategoryList></CategoryList>
               }
         >
         </FlatList>

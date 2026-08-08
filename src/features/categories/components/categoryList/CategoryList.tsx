@@ -111,12 +111,12 @@ export default function CategoryList(props:CategoryListProps){
 
     function CategoryListItem(props:ListRenderItemInfo<CategoryFlatListItemProps>){
         return (
-            <Pressable style={CategoryListItemStyles.container} onPress={async ()=>{await CategoryListItemOnPress(props.item)}}>
-                <View style={[CategoryListItemStyles.iconContainer,{backgroundColor:props.item.color}]}>
-                  <MaterialCommunityIcons name={props.item.iconName} size={30} color={"white"} />
-                </View>
-                <AppText numberOfLines={3} ellipsizeMode="tail" style={[CategoryListItemStyles.title]}>{props.item.name}</AppText>
-            </Pressable>
+          <Pressable style={CategoryListItemStyles.container} onPress={async ()=>{await CategoryListItemOnPress(props.item)}}>
+              <View style={[CategoryListItemStyles.iconContainer,{backgroundColor:props.item.color}]}>
+                <MaterialCommunityIcons name={props.item.iconName} size={30} color={"white"} />
+              </View>
+              <AppText numberOfLines={3} ellipsizeMode="tail" style={[CategoryListItemStyles.title]}>{props.item.name}</AppText>
+          </Pressable>
         )
     }
 

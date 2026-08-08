@@ -5,7 +5,7 @@ const CategoryListStyles = StyleSheet.create({
     container:{
         width:"100%",
         padding:0,
-        height:90,
+        height:90
     },
     list:{
     }
