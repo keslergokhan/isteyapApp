@@ -24,9 +24,9 @@ export const ButtonStyles = StyleSheet.create<AppVariantStyles<TextStyle>>({
   },
   tertiary:{
     ...buttonBaseContainer,
-    backgroundColor: "transparent",
+    backgroundColor: theme.color.tertiary.main,
     borderWidth: 2,
-    borderColor: theme.color.tertiary.main,
+    borderColor: theme.color.tertiary.border,
   } as ViewStyle,
   pressed: {
     opacity: 0.85,

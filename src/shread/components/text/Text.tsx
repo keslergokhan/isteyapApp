@@ -14,16 +14,16 @@ export function AppH1Text(props:AppTextProps){
 
 
 export function AppH2Text(props:AppTextProps){
-    const variandStyles = props.variant ? AppH2TextStyles[props.variant] : AppTitleTextStyles.basic;
+    const variandStyles = props.variant ? AppH2TextStyles[props.variant] : AppH2TextStyles.basic;
     return (<Text {...props} style={[variandStyles,props.style]}>{props.children}</Text>);
 }
 
 export function AppH3Text(props:AppTextProps){
-    const variandStyles = props.variant ? AppH3TextStyles[props.variant] : AppTitleTextStyles.basic;
+    const variandStyles = props.variant ? AppH3TextStyles[props.variant] : AppH3TextStyles.basic;
     return (<Text {...props} style={[variandStyles,props.style]}>{props.children}</Text>);
 }
 
 export function AppSmallText(props:AppTextProps){
-    const variandStyles = props.variant ? AppSmallTextStyles[props.variant] : AppTitleTextStyles.basic;
+    const variandStyles = props.variant ? AppSmallTextStyles[props.variant] : AppSmallTextStyles.basic;
     return (<Text {...props} style={[variandStyles,props.style]}>{props.children}</Text>);
 }

@@ -7,6 +7,7 @@ import { ThemeTest } from '@/shread/theme/ThemeTest';
 export function SubCategoryListItem(){
     return (
         <AppCard style={{...SubCategoryItemStyles.Card,backgroundColor:"green"}}>
+            
         </AppCard>
     );
 }

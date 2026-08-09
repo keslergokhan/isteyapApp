@@ -4,7 +4,7 @@ import { AppStackProps } from "./Stack.types";
 export function AppVStack(props:AppStackProps){
     return (
         <View style={{flexDirection:"column",gap:props.spacing}}>
-            {props.cheldren}
+            {props.children}
         </View>
     );
 }
@@ -12,7 +12,7 @@ export function AppVStack(props:AppStackProps){
 export function AppHStack(props:AppStackProps){
     return (
         <View style={{flexDirection:"row",gap:props.spacing}}>
-            {props.cheldren}
+            {props.children}
         </View>
     );
 }
