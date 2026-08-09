@@ -58,7 +58,7 @@ export default function ListingList(){
                   refreshing={refreshing}
                   onRefresh={handleRefresh}
                   tintColor="#007ACC"
-                  colors={[theme.color.primarySoft]}
+                  colors={[theme.color.primary.main]}
                 />
               }
               ListHeaderComponent={

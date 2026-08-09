@@ -10,16 +10,15 @@ const BaseContainer: TextStyle = {
 export const AppTextStyles = StyleSheet.create<AppVariantStyles<TextStyle>>({
     primary: {
         ...BaseContainer,
-        color: theme.color.white
-        
+        color: theme.color.text.primary
     },
     secondary: {
         ...BaseContainer,
-        color: theme.color.white,
+        color: theme.color.text.secondary,
     },
-    outline: {
+    tertiary: {
         ...BaseContainer,
-        color: theme.color.primary
+        color: theme.color.text.tertiary
     },
     basic:{
         ...BaseContainer,
@@ -34,14 +33,15 @@ export const AppTitleTextStyles = StyleSheet.create<AppVariantStyles<TextStyle>>
     primary: {
         ...BaseTitleContainer,
         ...theme.typography.h1,
+        color: theme.color.text.primary
     },
     secondary: {
         ...BaseTitleContainer,
         color: theme.color.text.secondary,
     },
-    outline: {
+    tertiary: {
         ...BaseTitleContainer,
-        color: theme.color.primary
+        color: theme.color.text.tertiary,
     },
     basic:{
         ...BaseTitleContainer,
@@ -57,16 +57,15 @@ const BaseH2Container: TextStyle = {
 export const AppH2TextStyles = StyleSheet.create<AppVariantStyles<TextStyle>>({
     primary: {
         ...BaseH2Container,
-        color: theme.color.white
-        
+        color: theme.color.text.primary
     },
     secondary: {
         ...BaseH2Container,
-        color: theme.color.white,
+        color: theme.color.text.secondary,
     },
-    outline: {
+    tertiary: {
         ...BaseH2Container,
-        color: theme.color.primary
+        color: theme.color.text.tertiary,
     },
     basic:{
         ...BaseH2Container,
@@ -80,16 +79,15 @@ const BaseH3Container: TextStyle = {
 export const AppH3TextStyles = StyleSheet.create<AppVariantStyles<TextStyle>>({
     primary: {
         ...BaseH3Container,
-        color: theme.color.white
-        
+        color: theme.color.text.primary
     },
     secondary: {
         ...BaseH3Container,
-        color: theme.color.white,
+        color: theme.color.text.secondary,
     },
-    outline: {
+    tertiary: {
         ...BaseH3Container,
-        color: theme.color.primary
+        color: theme.color.text.tertiary,
     },
     basic:{
         ...BaseH3Container,
@@ -104,16 +102,15 @@ const BaseSmallContainer: TextStyle = {
 export const AppSmallTextStyles = StyleSheet.create<AppVariantStyles<TextStyle>>({
     primary: {
         ...BaseSmallContainer,
-        color: theme.color.white
-        
+        color: theme.color.text.primary
     },
     secondary: {
         ...BaseSmallContainer,
-        color: theme.color.white,
+        color: theme.color.text.secondary,
     },
-    outline: {
+    tertiary: {
         ...BaseSmallContainer,
-        color: theme.color.primary
+        color: theme.color.text.tertiary,
     },
     basic:{
         ...BaseSmallContainer,

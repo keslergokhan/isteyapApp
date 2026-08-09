@@ -1,10 +1,10 @@
 import { View } from "react-native";
 import MainLayoutProps from "./MainLayout.types";
-import MainLayoutStyles from "./MainLayout.styles";
+import styles from "./MainLayout.styles";
 
 export default function MainLayout(props:MainLayoutProps) {
     return (
-        <View style={MainLayoutStyles.container}>
+        <View style={styles.container}>
             {props.children}
         </View>
     );

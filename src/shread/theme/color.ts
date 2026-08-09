@@ -1,157 +1,35 @@
-const primaryBase = "#1E1E1E"; // Ana marka rengi (VS Code benzeri mavi) 
 
 export const color = {
-  /**
-   * Uygulamanın ana marka rengi.
-   * 
-   * Kullanım Alanları:
-   * - Primary button
-   * - Active tab
-   * - Selected item
-   * - Linkler
-   * - Icon vurgu renkleri
-   */
-  primary: primaryBase,
-
-  /**
-   * Ana rengin yumuşatılmış tonu.
-   *
-   * Kullanım Alanları:
-   * - Secondary button background
-   * - Badge background
-   * - Selected row background
-   * - Hover / Pressed state
-   */
-  primarySoft: "#3E3E42",
-  primarySoftLight:"#CCCCCC",
-
-  /**
-   * Ana rengin açık tonu.
-   *
-   * Kullanım Alanları:
-   * - Input focus background
-   * - Highlight alanları
-   * - Bilgilendirme kutuları
-   * - Hafif vurgu gereken alanlar
-   */
-  primaryLight: "#007ACC",
-
-  /**
-   * Uygulamanın varsayılan sayfa arka plan rengi.
-   *
-   * Kullanım Alanları:
-   * - Screen background
-   * - Main container background
-   */
-  background: "#67676f",
-
-  /**
-   * Component yüzey rengi.
-   *
-   * Kullanım Alanları:
-   * - Card
-   * - Modal
-   * - Dropdown
-   * - Panel
-   */
-  surface: "#F8FAFC",
-
-  /**
-   * Varsayılan component kenarlık rengi.
-   *
-   * Kullanım Alanları:
-   * - Input border
-   * - Card border
-   * - Hafif çerçeveler
-   */
-  border: "#D7E7F5",
-
-  /**
-   * Ayırıcı çizgi rengi.
-   *
-   * Kullanım Alanları:
-   * - List separator
-   * - Table row separator
-   * - Section divider
-   */
-  divider: "#3E3E42",
-
-  text: {
-
-    /**
-     * Ana metin rengi.
-     *
-     * Kullanım Alanları:
-     * - Başlıklar
-     * - Form label
-     * - Ana içerik
-     */
-    main: "#D4D4D4",
-
-    /**
-     * İkincil metin rengi.
-     *
-     * Kullanım Alanları:
-     * - Açıklama metinleri
-     * - Helper text
-     * - Metadata
-     */
-    secondary: "#CCCCCC",
-
-    secondaryLight:"#007ACC"
-   
+  primary: {
+    main: '#1E1E1E',
+    border:"#333338"
   },
-
-  /**
-   * Başarılı işlem rengi.
-   *
-   * Kullanım Alanları:
-   * - Success message
-   * - Completed status
-   * - Positive badge
-   */
-  success: "#22C55E",
-
-  /**
-   * Uyarı rengi.
-   *
-   * Kullanım Alanları:
-   * - Warning message
-   * - Attention badge
-   * - Pending status
-   */
-  warning: "#F59E0B",
-
-  /**
-   * Hata rengi.
-   *
-   * Kullanım Alanları:
-   * - Error message
-   * - Validation error
-   * - Delete action
-   */
-  error: "#EF4444",
-
-  /**
-   * Saf beyaz.
-   *
-   * Kullanım Alanları:
-   * - Primary button text
-   * - Koyu arka plan üzerindeki metinler
-   */
-  white: "#FFFFFF",
-
-  /**
-   * Saf siyah.
-   *
-   * Kullanım Alanları:
-   * - Overlay
-   * - Özel tasarım ihtiyaçları
-   * - Debug amaçlı kullanım
-   */
-  black: "#000000",
-
-};
+  secondary: {
+    main: '#3E3E42',
+    border:"#55555A"
+  },
+  tertiary: {
+    main: '#007ACC',
+    border:"#005A8D"
+  },
+  background: "#67676f",
+  text:{
+    primary:"#FFFF",
+    secondary:"#D4D4D4",
+    tertiary:"#007ACC"
+  },
+  error:{
+    main:"#EF4444"
+  },
+  warning:{
+    main:"#F59E0B"
+  },
+  success:{
+    main:"22C55E"
+  },
+  white:"#FFFFFF",
+  black:"#000000",
+}
 
 
 /**

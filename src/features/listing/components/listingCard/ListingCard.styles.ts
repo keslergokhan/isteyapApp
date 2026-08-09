@@ -15,10 +15,13 @@ export const COLORS = {
 const styles = StyleSheet.create({
     card: {
         flexDirection: 'row',
-        backgroundColor: COLORS.cardBackground,
         borderBottomWidth: 1,
-        borderBottomColor: COLORS.surfaceBorder,
         padding: 12,
+        marginTop:1,
+        marginBottom:0.5,
+        marginLeft:0,
+        marginRight:0,
+        borderRadius:0
       },
       imageContainer: {
         width: 110,
@@ -54,7 +57,7 @@ const styles = StyleSheet.create({
       },
       favoriteIcon: {
         borderRadius:100,
-        backgroundColor: theme.color.primarySoft,
+        backgroundColor: theme.color.primary.main,
         paddingBottom:2,
         paddingTop:4,
         paddingLeft:3,

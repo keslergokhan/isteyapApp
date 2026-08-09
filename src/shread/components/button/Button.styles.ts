@@ -14,19 +14,19 @@ const buttonBaseContainer : ViewStyle = {
 export const ButtonStyles = StyleSheet.create<AppVariantStyles<TextStyle>>({
   primary:{
     ...buttonBaseContainer,
-    backgroundColor: theme.color.primary,
+    backgroundColor: theme.color.primary.main,
   },
   secondary:{
     ...buttonBaseContainer,
-    backgroundColor: theme.color.primaryLight,
+    backgroundColor: theme.color.secondary.main,
     borderWidth: 1,
-    borderColor: theme.color.border,
+    borderColor: theme.color.secondary.border,
   },
-  outline:{
+  tertiary:{
     ...buttonBaseContainer,
     backgroundColor: "transparent",
     borderWidth: 2,
-    borderColor: theme.color.border,
+    borderColor: theme.color.tertiary.main,
   } as ViewStyle,
   pressed: {
     opacity: 0.85,
@@ -45,7 +45,7 @@ export const ButtonChildrenStyles = StyleSheet.create<AppVariantStyles<TextStyle
   secondary:{
     ...textBaseContainer,
   },
-  outline:{
+  tertiary:{
     ...textBaseContainer,
   }
 });

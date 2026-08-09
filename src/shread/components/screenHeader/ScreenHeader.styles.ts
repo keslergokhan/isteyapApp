@@ -4,7 +4,7 @@ import { StyleSheet } from "react-native";
 const ScreenHeaderStyles = StyleSheet.create({
     container:{
         height: 60,
-        backgroundColor:theme.color.primary,
+        backgroundColor:theme.color.primary.main,
         flexDirection:"row",
         alignItems:"center",
         justifyContent:"space-between",
@@ -18,7 +18,7 @@ const ScreenHeaderStyles = StyleSheet.create({
     Icon:{
         width:35,
         height:35,
-        backgroundColor:theme.color.primarySoft,
+        backgroundColor:theme.color.secondary.main,
         textAlign:"center",
         alignItems:"center",
         justifyContent:"center",

@@ -3,7 +3,7 @@ import { StyleSheet } from "react-native"
 
 const TabBarStyles = StyleSheet.create({
     content:{
-        backgroundColor:theme.color.primary,
+        backgroundColor:theme.color.primary.main,
         width:"100%",
         margin:"auto",
         flexDirection:"row",

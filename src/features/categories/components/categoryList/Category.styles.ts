@@ -15,11 +15,12 @@ const CategoryListItemStyles = StyleSheet.create({
     container:{
         width: 100,
         alignItems: "center",
-        backgroundColor:theme.color.primarySoft,
+        backgroundColor:theme.color.secondary.main,
         flexDirection: 'column',
         gap:5,
         padding:5,
-        flex:1
+        paddingTop:7,
+        flex:1,
     },
     iconContainer: {
         height:40,

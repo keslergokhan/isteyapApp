@@ -19,7 +19,7 @@ export default function ScreenHeader(){
     return (
         <View style={ScreenHeaderStyles.container}>
             <Pressable style={ScreenHeaderStyles.Icon} onPress={onPressGoBack}>
-                <MaterialCommunityIcons name="keyboard-backspace" size={24} color={theme.color.primarySoftLight} />
+                <MaterialCommunityIcons name="keyboard-backspace" size={24} color={theme.color.text.secondary} />
             </Pressable>
             <AppH2Text style={ScreenHeaderStyles.title} variant="secondary">
                 {context?.screenHeaderTitle}

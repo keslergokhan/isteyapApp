@@ -18,7 +18,7 @@ export default function AppHead() {
         {/* Üst Satır: Logo, Konum ve Sağ İkonlar */}
         <View style={AppHeadStyles.topRow}>
           {/* Logo (Yazı olarak istenildiği için el yazısı fontuna benzer italik bir stil verildi) */}
-          <AppH1Text style={AppHeadStyles.logoText}>isteyap</AppH1Text>
+          <AppH1Text variant="secondary"  style={AppHeadStyles.logoText}>isteyap</AppH1Text>
 
           {/* Konum Seçici Buton */}
           <TouchableOpacity style={AppHeadStyles.locationButton} activeOpacity={0.8}>

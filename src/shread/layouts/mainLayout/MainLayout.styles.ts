@@ -5,7 +5,6 @@ const MainLayoutStyles = StyleSheet.create({
     container: {
         backgroundColor: theme.color.background,
         flex:1,
-        
     }
 });
 

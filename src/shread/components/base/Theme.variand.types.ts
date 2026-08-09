@@ -1,6 +1,6 @@
 import { TextStyle, ViewStyle } from "react-native";
 
-const defaultVariant = ["primary", "secondary", "outline"] as const;
+const defaultVariant = ["primary", "secondary", "tertiary"] as const;
 
 export type Variant = typeof defaultVariant[number];
 

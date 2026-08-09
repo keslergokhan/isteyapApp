@@ -3,7 +3,7 @@ import theme from '@/shread/theme';
 
 const AppHeadStyles = StyleSheet.create({
     container: {
-        backgroundColor: theme.color.primary,
+        backgroundColor: theme.color.primary.main,
         paddingHorizontal: 16,
         paddingTop: 35,
         paddingBottom: 12,
@@ -15,8 +15,6 @@ const AppHeadStyles = StyleSheet.create({
         marginBottom: 16,
     },
     logoText: {
-        color: theme.color.text.main,
-        fontSize: 32,
         fontWeight: 'bold',
         fontStyle: 'italic', // Letgo'nun el yazısı hissini yakalamak için
         letterSpacing: -1.5,
@@ -24,7 +22,7 @@ const AppHeadStyles = StyleSheet.create({
     locationButton: {
         flexDirection: 'row',
         alignItems: 'center',
-        backgroundColor: theme.color.primarySoft,
+        backgroundColor: theme.color.secondary.main,
         paddingVertical: 10,
         paddingHorizontal: 12,
         borderRadius: 20,
@@ -47,7 +45,7 @@ const AppHeadStyles = StyleSheet.create({
         width: 38,
         height: 38,
         borderRadius: 19,
-        backgroundColor: theme.color.primarySoft,
+        backgroundColor: theme.color.secondary.main,
         alignItems: 'center',
         justifyContent: 'center',
     },

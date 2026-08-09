@@ -20,18 +20,18 @@ const BaseContainer: ViewStyle = {
 export const AppCardStyles = StyleSheet.create<AppVariantStyles<ViewStyle>>({
   primary: {
     ...BaseContainer,
-    backgroundColor: theme.color.primary, // Zemin rengi için color.surface kullanıldı
+    backgroundColor: theme.color.primary.main, // Zemin rengi için color.surface kullanıldı
   },
   secondary: {
     ...BaseContainer,
-    backgroundColor: theme.color.primarySoft, // Hafif mavi renk için color.primarySoft kullanıldı
+    backgroundColor: theme.color.secondary.main, // Hafif mavi renk için color.primarySoft kullanıldı
     borderWidth: 1,
     borderColor: "transparent", // Ana mavi renk için color.primary kullanıldı
   },
-  outline: {
+  tertiary: {
     ...BaseContainer,
-    backgroundColor: theme.color.primarySoft, // Şeffaf zemin
+    backgroundColor: theme.color.tertiary.main, // Şeffaf zemin
     borderWidth: 1,
-    borderColor: theme.color.border, // Kenarlık için varsayılan border rengi kullanıldı
+    borderColor: theme.color.tertiary.border, // Kenarlık için varsayılan border rengi kullanıldı
   },
 });
