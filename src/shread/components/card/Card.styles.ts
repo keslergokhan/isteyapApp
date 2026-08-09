@@ -4,8 +4,7 @@ import theme from "@/shread/theme";
 
 const BaseContainer: ViewStyle = {
   padding: theme.spacing.md,
-  margin: theme.spacing.sm,
-  display: "flex",
+  margin: theme.spacing.xs,
   borderRadius: theme.radius.md,
   shadowColor: theme.color.black,
     shadowOffset: {

@@ -8,7 +8,7 @@ import {
 import { Ionicons, MaterialIcons, Feather } from "@expo/vector-icons";
 import AppHeadStyles from "./AppHead.styles";
 import theme from "@/shread/theme";
-import AppText, { AppH1Text } from "../text/Text";
+import { AppH1Text } from "../text/Text";
 
 export default function AppHead() {
   return (

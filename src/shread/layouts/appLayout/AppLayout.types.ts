@@ -1,3 +1,5 @@
-export default interface AppLayoutProps{
-    children : React.ReactElement
+import React from "react";
+
+export interface AppLayoutProps{
+    children:React.ReactNode
 }

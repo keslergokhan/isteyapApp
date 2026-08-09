@@ -7,8 +7,9 @@ const SubCategoryStyles = StyleSheet.create({
 });
 
 const SubCategoryItemStyles = StyleSheet.create({
-    Card:{
-        
+    Container:{
+        justifyContent:"space-between",
+        flexDirection:"row",
     }
 });
 

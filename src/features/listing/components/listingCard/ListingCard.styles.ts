@@ -16,12 +16,7 @@ const styles = StyleSheet.create({
     card: {
         flexDirection: 'row',
         borderBottomWidth: 1,
-        padding: 12,
-        marginTop:1,
-        marginBottom:0.5,
-        marginLeft:0,
-        marginRight:0,
-        borderRadius:0
+
       },
       imageContainer: {
         width: 110,

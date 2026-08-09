@@ -7,12 +7,7 @@ export default function ListingStack() {
 
     const Stack = createNativeStackNavigator();
     return (
-        <Stack.Navigator initialRouteName="Listing" screenOptions={defaultStackNavigationOptions} screenLayout={({children})=>{
-            return (
-            <AppLayout>
-                {children}
-            </AppLayout>)
-        }}>
+        <Stack.Navigator initialRouteName="Listing" screenOptions={defaultStackNavigationOptions} >
             <Stack.Screen name="Listing" component={ListingScreen}></Stack.Screen>
         </Stack.Navigator>
     );

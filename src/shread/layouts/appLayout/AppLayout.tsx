@@ -1,15 +1,12 @@
+import { View,Text } from "react-native";
+import styles from "./AppLayout.styles";
+import { AppLayoutProps } from "./AppLayout.types";
 import { AppHead } from "@/shread/components";
-import MainLayout from "../mainLayout/MainLayout";
-import AppLayoutProps from "./AppLayout.types";
-import { View } from "react-native";
 
-export default function AppLayout(props:AppLayoutProps){
+export default function AppLayout(props:AppLayoutProps) {
     return (
-        <MainLayout>
-            <View>
-                <AppHead></AppHead>
-                {props.children}
-            </View>
-        </MainLayout>
+        <View style={styles.container}>
+            {props.children}
+        </View>
     );
 }
