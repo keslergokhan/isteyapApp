@@ -50,7 +50,7 @@ export default function ListingList(){
 
     return <View>
         <FlatList key={"listing-list"}
-            data={[ s1,s2]} // Örnek veri
+            data={[ s1,s2,s3,s4,s5,s6,s7,s8,s9,s10,s11,s12 ]} // Örnek veri
             renderItem={({ item,index }) => <ListingCard key={index} {...item} onPress={item.onPress} />}
             keyExtractor={(item) => item.id}
             refreshControl={
