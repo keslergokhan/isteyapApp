@@ -40,13 +40,15 @@ const textBaseContainer : TextStyle = {
 export const ButtonChildrenStyles = StyleSheet.create<AppVariantStyles<TextStyle>>({
   primary:{
     ...textBaseContainer,
-    color: theme.color.white
+    color: theme.color.text.primary
   },
   secondary:{
     ...textBaseContainer,
+    color: theme.color.text.primary
   },
   tertiary:{
     ...textBaseContainer,
+    color: theme.color.text.primary
   }
 });
 

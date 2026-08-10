@@ -9,6 +9,8 @@ import { Ionicons, MaterialIcons, Feather } from "@expo/vector-icons";
 import AppHeadStyles from "./AppHead.styles";
 import theme from "@/shread/theme";
 import { AppH1Text } from "../text/Text";
+import AppLogo from "../logo/Logo";
+
 
 export default function AppHead() {
   return (
@@ -18,7 +20,7 @@ export default function AppHead() {
         {/* Üst Satır: Logo, Konum ve Sağ İkonlar */}
         <View style={AppHeadStyles.topRow}>
           {/* Logo (Yazı olarak istenildiği için el yazısı fontuna benzer italik bir stil verildi) */}
-          <AppH1Text variant="secondary"  style={AppHeadStyles.logoText}>isteyap</AppH1Text>
+          <AppLogo></AppLogo>
 
           {/* Konum Seçici Buton */}
           <TouchableOpacity style={AppHeadStyles.locationButton} activeOpacity={0.8}>
