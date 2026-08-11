@@ -44,10 +44,8 @@ const footerStyles = StyleSheet.create({
     },
     termsText: {
         color: theme.color.text.secondary,
-        fontSize: 12,
         textAlign: 'center',
         marginTop: 20,
-        lineHeight: 18,
     },
     boldText: {
         fontWeight: '700',

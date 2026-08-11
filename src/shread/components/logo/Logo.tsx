@@ -14,7 +14,7 @@ export default function AppLogo(props:AppLogoProps){
 
     return (
         <View style={styles.container}>
-            <AppH1Text variant="secondary" style={{...styles.logoText,...sizeStyles}}>isteyap</AppH1Text>
+            <AppH1Text variant={props.variant ? props.variant : "secondary"} style={{...styles.logoText,...sizeStyles}}>isteyap</AppH1Text>
         </View>
     );
 }

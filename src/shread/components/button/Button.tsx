@@ -8,7 +8,9 @@ export default function AppButton(props:AppButtonProps){
 
     const varyand:Variant = props.variant ? props.variant : "primary";
     return (
-        <Pressable style={({pressed})=>[ButtonStyles[varyand],pressed && ButtonStyles.pressed,props.styles]}>
+        <Pressable 
+        onPress={props.onPress && !props.disabled ? props.onPress : undefined}
+        style={({pressed})=>[ButtonStyles[varyand],pressed && ButtonStyles.pressed,props.styles]}>
             <Text style={ButtonChildrenStyles[varyand]}>{props.children}</Text>
         </Pressable>
     );
