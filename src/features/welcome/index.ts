@@ -1,3 +1,4 @@
-import { WelcomeScreen } from "../auth";
+import { WelcomeStackParamList } from "./navigations/WelcomeStack.type";
+import WelcomeScreen from "./screens/WelcomeScreen";
 
-export { WelcomeScreen };
+export { WelcomeScreen,WelcomeStackParamList };

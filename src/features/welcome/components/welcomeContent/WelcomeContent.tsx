@@ -14,7 +14,6 @@ export default function WelcomeContent(prosp:WelcomeContentProps) {
                 <Text style={styles.description}>{prosp.description}</Text>
             </AppVStack>
         </AppVStack>
-        
     </AppCard>
     )
 }

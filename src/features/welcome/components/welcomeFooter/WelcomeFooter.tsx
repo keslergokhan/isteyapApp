@@ -11,12 +11,16 @@ export default function WelcomeFooter() {
   
   const navigation = useNavigation<NativeStackNavigationProp<RootNavigatorParam>>();
 
-  const loginBtnHandler = useCallback(()=>{
+  const loginBtnHandler = useCallback(async ()=>{
+    navigation.navigate("WelcomeNavigator",{screen:"AuthStack",params:{screen:"Login"}});
+  },[]);
+
+  const registerBtnHandler = useCallback(async ()=>{
     
   },[]);
 
-  const registerBtnHandler = useCallback(()=>{
-
+  const homeTextBtnHandler = useCallback(async ()=>{
+    navigation.navigate("AppNavigator",{screen:"HomeStack"});
   },[]);
 
   return (
@@ -24,9 +28,8 @@ export default function WelcomeFooter() {
       <View style={styles.buttonContainer}>
         <AppButton variant="tertiary" onPress={loginBtnHandler}>Giriş Yap</AppButton>
         <AppButton variant="secondary" onPress={registerBtnHandler}>Kayıt Ol</AppButton>
-        <Pressable style={{alignItems:"center"}} onPress={()=>{
-          navigation.navigate("AppNavigator",{screen:"HomeStack"});
-        }}>
+
+        <Pressable style={{alignItems:"center"}} onPress={homeTextBtnHandler}>
           <AppSmallText variant="primary">Anasayfa Git</AppSmallText>
         </Pressable>
       </View>
@@ -35,8 +38,6 @@ export default function WelcomeFooter() {
         Devam edersen {" "} 
         <AppSmallText style={styles.boldText}>letgo Hüküm ve Koşullarını ve Gizlilik Politikası</AppSmallText> 'nı kabul etmiş olursun.
       </AppSmallText>
-
-      
     </View>
   );
 }

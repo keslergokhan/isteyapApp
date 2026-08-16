@@ -7,7 +7,6 @@ import WelcomeContent from "../components/welcomeContent/WelcomeContent";
 
 export default function WelcomeScreen(){
     const loginBackground = require('@/assets/images/login-background.png');
-    const navigation = useNavigation<NativeStackNavigationProp<RootNavigatorParam>>();
     return (
         <ImageBackground style={{flex:1}} source={loginBackground} resizeMode="cover">
             <View style={{flex:1}}>
