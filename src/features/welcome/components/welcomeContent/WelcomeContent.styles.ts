@@ -4,16 +4,9 @@ import { StyleSheet } from 'react-native';
 const contentStyles = StyleSheet.create({
     container: {
       flex:1,
-      justifyContent: 'center',
+      justifyContent: 'flex-end',
       alignItems: 'center',
       paddingHorizontal: 24,
-    },
-    imagePlaceholder: {
-      width: 200,
-      height: 200,
-      marginBottom: 32,
-      justifyContent: 'center',
-      alignItems: 'center',
     },
     title: {
       fontSize: 22,

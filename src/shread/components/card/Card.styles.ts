@@ -17,6 +17,11 @@ const BaseContainer: ViewStyle = {
 };
 
 export const AppCardStyles = StyleSheet.create<AppVariantStyles<ViewStyle>>({
+  basic:{
+    ...BaseContainer,
+    backgroundColor: "transparent", // Şeffaf zemin
+    shadowColor:"transparent",
+  },
   primary: {
     ...BaseContainer,
     backgroundColor: theme.color.primary.main, // Zemin rengi için color.surface kullanıldı
