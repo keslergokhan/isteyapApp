@@ -1,6 +1,3 @@
-import RootNavigatorParam from "@/app/navigations/types/RootNavigatorParam.types";
-import { useNavigation } from "@react-navigation/native";
-import { NativeStackNavigationProp } from "@react-navigation/native-stack";
 import { ImageBackground, View} from "react-native";
 import WelcomeFooter from "../components/welcomeFooter/WelcomeFooter";
 import WelcomeContent from "../components/welcomeContent/WelcomeContent";

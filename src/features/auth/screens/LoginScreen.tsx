@@ -1,5 +1,15 @@
-import { View,Text } from "react-native";
+import { View, Text, ImageBackground } from "react-native";
+import LoginForm from "../components/loginForm/LoginForm";
 
 export default function LoginScreen() {
-  return (<View><Text>Burası login sayfası </Text></View>);
+  const loginBackground = require("@/assets/images/login-background.png");
+  return (
+    <ImageBackground
+      style={{ flex: 1 }}
+      source={loginBackground}
+      resizeMode="cover"
+    >
+      <LoginForm></LoginForm>
+    </ImageBackground>
+  );
 }

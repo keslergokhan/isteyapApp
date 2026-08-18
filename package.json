@@ -4,6 +4,7 @@
   "main": "index.ts",
   "dependencies": {
     "@expo/vector-icons": "^15.0.2",
+    "@hookform/resolvers": "^5.9.1",
     "@react-navigation/bottom-tabs": "^7.18.11",
     "@react-navigation/material-top-tabs": "^7.6.10",
     "@react-navigation/native": "^7.3.8",
@@ -11,9 +12,11 @@
     "expo": "~57.0.4",
     "expo-status-bar": "~57.0.0",
     "react": "19.2.3",
+    "react-hook-form": "^7.85.0",
     "react-native": "0.86.0",
     "react-native-safe-area-context": "~5.7.0",
-    "react-native-screens": "4.25.2"
+    "react-native-screens": "4.25.2",
+    "zod": "^4.4.3"
   },
   "devDependencies": {
     "@types/react": "~19.2.2",
