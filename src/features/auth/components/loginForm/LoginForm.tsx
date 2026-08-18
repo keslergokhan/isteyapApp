@@ -7,25 +7,33 @@ import {
 } from "@/shread/components";
 import LoginFormStyles from "./LoginForm.styles";
 import { LoginFormData } from "./LoginForm.type";
-import { useForm } from "react-hook-form";
+import { Controller, SubmitHandler, useForm } from "react-hook-form";
 import { View } from "react-native";
+import * as Yup from 'yup';
+import { yupResolver } from "@hookform/resolvers/yup";
 
 export default function LoginForm() {
-  const {
-    control,
-    handleSubmit,
-    formState: { errors },
-  } = useForm<LoginFormData>({
-    defaultValues: {
-      email: "",
-      firstName: "",
-      lastName: "",
-    },
-  });
+  
+  const defaultData:LoginFormData = {
+    email: "",
+    firstName: "",
+    lastName: "",
+  }
 
-  const onSubmit = (data: LoginFormData) => {
-    console.log(data);
-  };
+  
+  const loginSchema:Yup.ObjectSchema<LoginFormData> = Yup.object({
+    email: Yup.string().required("Lütfen boş bırakmayınız"),
+    firstName: Yup.string().required("Lütfen boş bırakmayınız"),
+    lastName: Yup.string().required("Lütfen boş bırakmayınız"),
+  }); 
+  
+  const { control, handleSubmit, formState: { errors } } = useForm<LoginFormData>({defaultValues:defaultData,resolver:yupResolver(loginSchema)});
+
+  async function onSubmit(data:LoginFormData){
+    alert(`${data.email} - ${data.firstName} ${data.lastName}`);
+  }
+
+
 
   return (
     <AppCard style={LoginFormStyles.container}>
@@ -34,11 +42,11 @@ export default function LoginForm() {
           <AppLogo size="large"></AppLogo>
         </View>
         <AppVStack spacing={8}>
-          <AppTextInput label="Bu bir deneme"></AppTextInput>
-          <AppTextInput label="Bu bir deneme"></AppTextInput>
-          <AppTextInput label="Bu bir deneme"></AppTextInput>
+          <AppTextInput control={control} name="email" label="Email Adresi"></AppTextInput>
+          <AppTextInput control={control} name="firstName" label="Ad"></AppTextInput>
+          <AppTextInput control={control} name="lastName" label="Soyad"></AppTextInput>
         </AppVStack>
-        <AppButton variant="tertiary">Kayıt Ol</AppButton>
+        <AppButton variant="tertiary" onPress={handleSubmit(onSubmit)}>Kayıt Ol</AppButton>
       </AppVStack>
     </AppCard>
   );
