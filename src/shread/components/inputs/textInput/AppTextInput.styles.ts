@@ -1,18 +1,23 @@
 import theme from "@/shread/theme";
 import { StyleSheet } from "react-native";
 
+const labelFontSize = 15;
+const inputHeight = 48
 const AppTextInputStyles = StyleSheet.create({
     container: {
         width: '100%',
     },
+    inputContainer:{
+        position:"relative"
+    },
     label: {
-        fontSize: 15,
+        fontSize: labelFontSize,
         fontWeight: '500',
         color: theme.color.text.secondary,
         marginBottom: 6,
     },
     input: {
-        height: 48,
+        height: inputHeight,
         borderRadius: 8,
         borderWidth: 1,
         paddingHorizontal: 12,
@@ -32,6 +37,11 @@ const AppTextInputStyles = StyleSheet.create({
         color: '#FF4D4D',
         marginTop: 1,
     },
+    inputSecureTextEntry:{
+        position:"absolute",
+        right:10,
+        top:labelFontSize+(inputHeight/2)
+    }
 });
 
 export default AppTextInputStyles;
