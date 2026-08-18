@@ -1,14 +1,16 @@
 import {
   AppButton,
   AppCard,
+  AppHStack,
   AppLogo,
+  AppText,
   AppTextInput,
   AppVStack,
 } from "@/shread/components";
 import LoginFormStyles from "./LoginForm.styles";
 import { LoginFormData } from "./LoginForm.type";
 import { Controller, SubmitHandler, useForm } from "react-hook-form";
-import { View } from "react-native";
+import { Pressable, View } from "react-native";
 import * as Yup from "yup";
 import { yupResolver } from "@hookform/resolvers/yup";
 
@@ -56,6 +58,7 @@ export default function LoginForm() {
         <AppButton variant="tertiary" onPress={handleSubmit(onSubmit)}>
           Giriş
         </AppButton>
+        
       </AppVStack>
     </AppCard>
   );
