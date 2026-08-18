@@ -1,11 +1,10 @@
-import { View,Text } from "react-native";
+import { View, Text } from "react-native";
 import { ChartList } from "../components/chatList/ChatList";
 
 export default function ChatListScreen() {
-    
-    return (
-        <View>
-            <ChartList></ChartList>
-        </View>
-    )
+  return (
+    <View>
+        <ChartList></ChartList>
+    </View>
+  );
 }

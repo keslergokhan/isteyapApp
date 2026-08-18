@@ -11,7 +11,7 @@ import { FlatList } from 'react-native';
 
 export function SubCategoryListItem(props:SubCategoryListItemProps){
     return (
-        <AppCard>
+        <AppCard variant='primary'>
             <View style={SubCategoryItemStyles.Container}>
                 <AppH3Text variant='secondary'>{props.title}</AppH3Text>
                 <MaterialCommunityIcons name="arrow-right" size={24} color={theme.color.text.secondary} />

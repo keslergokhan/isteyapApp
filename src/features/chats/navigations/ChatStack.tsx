@@ -1,11 +1,13 @@
 import { createNativeStackNavigator } from "@react-navigation/native-stack";
 import ChatListScreen from "../screens/ChatListScreen";
-import { AppLayout, DetailLayout } from "@/shread/layouts";
+import { DetailLayout } from "@/shread/layouts";
 import { defaultStackNavigationOptions } from "@/app/navigations/configs/DefaultStackNavigationOptions";
+import ChatDetailScreen from "../screens/ChatDetailScreen";
+import { ChatStackParamList } from "./ChatStack.types";
 
 export default function ChatStack() {
 
-    const Stack = createNativeStackNavigator();
+    const Stack = createNativeStackNavigator<ChatStackParamList>();
     return (
         <Stack.Navigator initialRouteName="ChatListScreen" screenOptions={defaultStackNavigationOptions} 
         screenLayout={({children})=>{
@@ -15,6 +17,7 @@ export default function ChatStack() {
             </DetailLayout>)
         }}>
             <Stack.Screen name="ChatListScreen" component={ChatListScreen} />
+            <Stack.Screen name="ChatDetailScreen" component={ChatDetailScreen} />
        </Stack.Navigator>
     );
 }
